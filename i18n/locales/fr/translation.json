@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "features": "Fonctionnalités"
+  },
+  "hero": {
+    "title": "Gestion financière complète",
+    "titleHighlight": "de votre club de football",
+    "subtitle": "Finset apporte aux clubs professionnels une plateforme unique de centralisation et de pilotage des flux financiers, transformant la complexité opérationnelle en décisions claires et maîtrisées.",
+    "viewDemo": "Demander une démo",
+    "cards": {
+      "compliance": "Conformité réglementaire",
+      "complianceDesc": "Réglementation FIFA & UEFA intégrée",
+      "security": "Sécurité et transparence",
+      "securityDesc": "Données financières protégées"
+    }
+  },
+  "features": {
+    "title": "Fonctionnalités principales",
+    "subtitle": "Centralisez toutes vos opérations financières sportives dans une seule solution intelligente et conforme aux réglementations FIFA et UEFA.",
+    "squadManagement": {
+      "title": "Suivi de l'effectif",
+      "description": "Visualisation de l'effectif actuel et historique, fiche de détail d'un joueur et comparateur de masse salariale."
+    },
+    "network": {
+      "title": "Pilotage financier",
+      "description": "Dashboards centralisant la visualisation des flux financiers, suivi de l'évolution financière du club."
+    },
+    "transferManagement": {
+      "title": "Gestion des transferts",
+      "description": "Centralisation de l'ensemble des transferts du club avec visualisation des échéances de paiement et de l'impact financier."
+    },
+    "contracts": {
+      "title": "Gestion des contrats",
+      "description": "Centralisation des contrats et documents, calcul de la rémunération variable sur la base des performances et simulation de l'impact financier de nouveaux contrats."
+    },
+    "forecast": {
+      "title": "Simulation & prévisionnel",
+      "description": "Outil de simulation permettant une prévision d'item du P&L, édition automatique de rapports à envoyer au régulateur."
+    },
+    "compensations": {
+      "title": "Gestion des indemnités",
+      "description": "Calcul et suivi automatisé des indemnités de formation et de solidarité selon réglementation FIFA avec notifications d'alertes."
+    }
+  },
+  "footer": {
+    "description": "La plateforme de gestion financière complète pour clubs de football professionnels.",
+    "product": "Produit",
+    "company": "Entreprise",
+    "support": "Support",
+    "links": {
+      "features": "Fonctionnalités",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "copyright": "© 2025 Finset. Tous droits réservés."
+  }
+}

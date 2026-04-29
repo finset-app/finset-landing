@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Base colors */
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(210 17% 15%);
+
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(210 17% 15%);
+
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(210 17% 15%);
+
+  --color-primary: hsl(210 89% 52%);
+  --color-primary-foreground: hsl(0 0% 100%);
+
+  --color-secondary: hsl(210 40% 96.1%);
+  --color-secondary-foreground: hsl(210 17% 15%);
+
+  --color-muted: hsl(210 40% 96.1%);
+  --color-muted-foreground: hsl(215.4 16.3% 46.9%);
+
+  --color-accent: hsl(173 58% 39%);
+  --color-accent-foreground: hsl(0 0% 100%);
+
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+
+  --color-border: hsl(214.3 31.8% 91.4%);
+  --color-input: hsl(214.3 31.8% 91.4%);
+  --color-ring: hsl(210 89% 52%);
+
+  --color-success: hsl(142 76% 36%);
+  --color-success-foreground: hsl(0 0% 100%);
+
+  --color-warning: hsl(38 92% 50%);
+  --color-warning-foreground: hsl(0 0% 100%);
+
+  /* Brand colors */
+  --color-brand-primary: hsl(210 89% 52%);
+  --color-brand-secondary: hsl(173 58% 39%);
+  --color-brand-accent: hsl(261 83% 58%);
+
+  /* Border radius */
+  --radius: 0.75rem;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Shadows */
+  --shadow-soft: 0 2px 8px hsl(210 89% 52% / 0.08);
+  --shadow-medium: 0 4px 24px hsl(210 89% 52% / 0.12);
+  --shadow-strong: 0 8px 32px hsl(210 89% 52% / 0.16);
+  --shadow-glow: 0 0 40px hsl(210 89% 52% / 0.3);
+
+  /* Background gradients */
+  --background-image-gradient-primary: linear-gradient(135deg, hsl(210 89% 52%), hsl(173 58% 39%));
+  --background-image-gradient-hero: linear-gradient(135deg, hsl(210 89% 52%) 0%, hsl(173 58% 39%) 50%, hsl(261 83% 58%) 100%);
+  --background-image-gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    border-color: var(--color-border);
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  button, [role="button"], a {
+    cursor: pointer;
+  }
 }

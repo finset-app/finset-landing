@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "features": "Features"
+  },
+  "hero": {
+    "title": "Complete financial management",
+    "titleHighlight": "for your football club",
+    "subtitle": "Finset provides professional clubs with a unique platform for centralising and steering financial flows, transforming operational complexity into clear, controlled decisions.",
+    "viewDemo": "Request a demo",
+    "cards": {
+      "compliance": "Regulatory compliance",
+      "complianceDesc": "FIFA & UEFA regulations built-in",
+      "security": "Security & transparency",
+      "securityDesc": "Protected financial data"
+    }
+  },
+  "features": {
+    "title": "Core features",
+    "subtitle": "Centralise all your sports financial operations in a single intelligent solution, fully compliant with FIFA and UEFA regulations.",
+    "squadManagement": {
+      "title": "Squad tracking",
+      "description": "Visualise your current and historical squad, access detailed player profiles, and compare wage structures."
+    },
+    "network": {
+      "title": "Financial oversight",
+      "description": "Dashboards centralising financial flow visualisation and tracking of the club's financial evolution."
+    },
+    "transferManagement": {
+      "title": "Transfer management",
+      "description": "Centralise all club transfers with visibility over payment schedules and financial impact."
+    },
+    "contracts": {
+      "title": "Contract management",
+      "description": "Centralise contracts and documents, calculate performance-based variable compensation, and simulate the financial impact of new contracts."
+    },
+    "forecast": {
+      "title": "Simulation & forecasting",
+      "description": "Simulation tool for P&L line-item forecasting, with automatic report generation for submission to the regulator."
+    },
+    "compensations": {
+      "title": "Compensation management",
+      "description": "Automated calculation and tracking of training and solidarity fees under FIFA regulations, with alert notifications."
+    }
+  },
+  "footer": {
+    "description": "The complete financial management platform for professional football clubs.",
+    "product": "Product",
+    "company": "Company",
+    "support": "Support",
+    "links": {
+      "features": "Features",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "copyright": "© 2025 Finset. All rights reserved."
+  }
+}
