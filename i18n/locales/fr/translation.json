@@ -49,8 +49,8 @@
     "support": "Support",
     "links": {
       "features": "Fonctionnalités",
-      "about": "À propos",
-      "contact": "Contact"
+      "contact": "Contact",
+      "legalNotice": "Mentions légales"
     },
     "copyright": "© 2025 Finset. Tous droits réservés."
   }
