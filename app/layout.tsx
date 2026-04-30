@@ -7,6 +7,13 @@ import Footer from "@/components/Footer";
 
 const geist = Geist({ subsets: ["latin"] });
 
+const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'FINSET',
+    url: 'https://finset.fr',
+};
+
 export const metadata: Metadata = {
     title: "Finset – Gestion financière complète de clubs de football",
     description: "Finset apporte aux clubs professionnels une plateforme unique de centralisation et de pilotage des flux financiers, transformant la complexité opérationnelle en décisions claires et maîtrisées.",
@@ -43,6 +50,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     <main>{children}</main>
                     <Footer />
                 </I18nProvider>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
             </body>
         </html>
     );
