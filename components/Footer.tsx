@@ -1,6 +1,7 @@
 "use client";
 
 import { Mail } from "lucide-react";
+import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { handleContactClick } from "@/utils/contact";
@@ -33,6 +34,15 @@ const Footer = () => {
                             >
                                 <Mail className="w-5 h-5" />
                             </button>
+                            <a
+                                href="https://linkedin.com/company/finset-app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
+                                aria-label="LinkedIn"
+                            >
+                                <FaLinkedinIn className="w-5 h-5" />
+                            </a>
                         </div>
                     </div>
 
