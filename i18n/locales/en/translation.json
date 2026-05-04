@@ -5,7 +5,7 @@
   "hero": {
     "title": "Complete financial management",
     "titleHighlight": "for your football club",
-    "subtitle": "Finset provides professional clubs with a unique platform for centralising and steering financial flows, transforming operational complexity into clear, controlled decisions.",
+    "subtitle": "Finset is a SaaS software designed for professional clubs, providing a unique platform for centralising and steering financial flows, transforming operational complexity into clear, controlled decisions.",
     "viewDemo": "Request a demo",
     "cards": {
       "compliance": "Regulatory compliance",
@@ -43,7 +43,7 @@
     }
   },
   "footer": {
-    "description": "The complete financial management platform for professional football clubs.",
+    "description": "The complete financial management SaaS for professional football clubs.",
     "product": "Product",
     "company": "Company",
     "support": "Support",
@@ -52,6 +52,6 @@
       "contact": "Contact",
       "legalNotice": "Legal Notice"
     },
-    "copyright": "© 2025 Finset. All rights reserved."
+    "copyright": "© 2026 Finset. All rights reserved."
   }
 }

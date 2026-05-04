@@ -15,11 +15,11 @@ const jsonLd = {
 };
 
 export const metadata: Metadata = {
-    title: "Finset – Gestion financière complète de clubs de football",
-    description: "Finset apporte aux clubs professionnels une plateforme unique de centralisation et de pilotage des flux financiers, transformant la complexité opérationnelle en décisions claires et maîtrisées.",
+    title: "Finset – Logiciel SaaS de gestion financière pour clubs de football",
+    description: "Finset est un logiciel SaaS dédié aux clubs professionnels. Notre application centralise et pilote vos flux financiers sportifs, transformant la complexité opérationnelle en décisions claires et maîtrisées.",
     openGraph: {
-        title: "Finset – Gestion financière complète de clubs de football",
-        description: "La plateforme de gestion financière pour le sport professionnel. Contrats, transferts, indemnités FIFA, conformité UEFA.",
+        title: "Finset – Logiciel SaaS de gestion financière pour clubs de football",
+        description: "Le logiciel SaaS de gestion financière pour le sport professionnel. Contrats, transferts, indemnités FIFA, conformité UEFA.",
         url: "https://finset.fr",
         siteName: "Finset",
         locale: "fr_FR",
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
                 url: "https://finset.fr/meta-preview.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Finset – Gestion financière de clubs de football",
+                alt: "Finset – Logiciel SaaS de gestion financière pour clubs de football",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Finset – Gestion financière de clubs de football",
-        description: "Centralisez vos flux financiers sportifs. Conforme FIFA & UEFA.",
+        title: "Finset – Logiciel SaaS de gestion financière",
+        description: "L'application SaaS pour centraliser vos flux financiers sportifs. Conforme FIFA & UEFA.",
     },
     metadataBase: new URL("https://finset.fr"),
 };
