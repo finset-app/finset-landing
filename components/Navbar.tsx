@@ -2,6 +2,7 @@
 
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
@@ -14,14 +15,16 @@ const Navbar = () => {
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center space-x-2 overflow-hidden">
                         <div className="w-32 shrink-0">
-                            <Image
-                                src="/finset-logo-blue.svg"
-                                alt="Finset logo"
-                                width={128}
-                                height={40}
-                                className="w-full h-auto object-contain"
-                                priority
-                            />
+                            <Link href="/">
+                                <Image
+                                    src="/finset-logo-blue.svg"
+                                    alt="Finset logo"
+                                    width={128}
+                                    height={40}
+                                    className="w-full h-auto object-contain"
+                                    priority
+                                />
+                            </Link>
                         </div>
                     </div>
 
@@ -41,7 +44,6 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                {/* Mobile Menu */}
                 {isMenuOpen && (
                     <div className="md:hidden py-4 border-t border-border/50">
                         <div className="flex flex-col space-y-4">

@@ -16,7 +16,7 @@ const legalNoticeItems = [
     },
     {
         label: "Hébergement",
-        value: "Le site finset.fr est hébergé par la société Vercel Inc., située au 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis. \n L’application web Finset est hébergée par la société Amazon Web Services (AWS). Les données sont stockées sur des serveurs situés en Europe (Région Paris, France)."
+        value: "Le site vitrine finset.fr est hébergé par la société Vercel Inc.\n L’application web Finset est hébergée par la société Amazon Web Services (AWS).\nLes données des utilisateur sont stockées sur des serveurs situés dans le pays de résidence du club."
     }
 ];
 
@@ -39,7 +39,7 @@ export default function LegalNoticePage() {
                             Mentions légales
                         </h1>
                         <p className="mt-4 text-sm text-gray-500">
-                            Dernière mise à jour : 30 avril 2026
+                            Dernière mise à jour : 8 mai 2026
                         </p>
                     </header>
 
@@ -74,5 +74,3 @@ export default function LegalNoticePage() {
         </main>
     );
 }
-
-

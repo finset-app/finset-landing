@@ -58,7 +58,6 @@ const Features = () => {
     return (
         <section id="features" className="py-24 bg-background">
             <div className="container mx-auto px-4">
-                {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
                         {t('features.title')}
@@ -68,7 +67,6 @@ const Features = () => {
                     </p>
                 </div>
 
-                {/* Features Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     {features.map((feature) => (
                         <Card key={feature.id} className="group hover:shadow-medium transition-all duration-300 border-0 bg-gradient-card">
