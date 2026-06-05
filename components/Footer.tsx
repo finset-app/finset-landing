@@ -67,6 +67,11 @@ const Footer = () => {
                                     {t('footer.links.legalNotice')}
                                 </a>
                             </li>
+                            <li>
+                                <a href="/terms" className="text-white/70 hover:text-white transition-colors">
+                                    {t('footer.links.terms')}
+                                </a>
+                            </li>
                         </ul>
                     </div>
 

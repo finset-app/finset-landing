@@ -50,8 +50,121 @@
     "links": {
       "features": "Fonctionnalités",
       "contact": "Contact",
-      "legalNotice": "Mentions légales"
+      "legalNotice": "Mentions légales",
+      "terms": "Conditions & Confidentialité"
     },
     "copyright": "© 2026 Finset. Tous droits réservés."
+  },
+  "legal": {
+    "backToHome": "Retour à l'accueil",
+    "title": "Conditions d'utilisation & Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour : 5 juin 2026",
+    "intro": "Finset est une plateforme SaaS dédiée à la gestion financière des clubs de football professionnels. La présente page décrit nos conditions d'utilisation et notre politique de confidentialité, conformément au Règlement général sur la protection des données (RGPD).",
+    "contactCta": "Pour exercer vos droits ou pour toute question relative à vos données, contactez-nous.",
+    "placeholderNotice": "Certaines sections (facturation, responsabilité, droit applicable) contiennent des éléments provisoires qui seront complétés par les équipes juridique et commerciale avant la mise en production. Cette page doit être validée par un conseil juridique avant sa publication.",
+    "sections": [
+      {
+        "title": "1. Description du service",
+        "items": [
+          "Finset est une plateforme SaaS dédiée à la gestion financière des clubs de football professionnels.",
+          "L'accès s'effectue via une application web avec un contrôle d'accès basé sur les rôles (RBAC)."
+        ]
+      },
+      {
+        "title": "2. Hébergement et infrastructure",
+        "items": [
+          "L'application est hébergée sur Amazon Web Services (AWS).",
+          "Architecture multi-tenant à deux niveaux d'isolation : une instance RDS PostgreSQL dédiée par pays (données localisées par pays), et au sein de chaque instance, un schéma PostgreSQL isolé par club (mécanisme principal d'isolation des données entre clubs).",
+          "Les données sont stockées dans le pays de résidence du club (souveraineté des données). Par exemple, les données d'un club français sont stockées dans la région AWS configurée pour la France (par ex. eu-west-3 / Paris).",
+          "À ce jour, seule la source de données française (FR) est configurée ; les instances pour d'autres pays font partie de l'architecture cible et seront ajoutées au fur et à mesure du développement de Finset.",
+          "AWS agit en tant que sous-traitant, soumis aux clauses contractuelles types (CCT) du RGPD."
+        ]
+      },
+      {
+        "title": "3. Utilisation de l'intelligence artificielle",
+        "items": [
+          "Finset utilise l'API Anthropic Claude pour l'extraction automatisée des données de joueurs et de contrats à partir des fichiers PDF importés.",
+          "Avis de transfert hors UE : lorsqu'un PDF est traité, son contenu (susceptible de contenir des données personnelles) est transmis à l'API Anthropic (infrastructure située aux États-Unis) pendant la durée de l'extraction. Il s'agit d'un transfert temporaire en dehors du pays de résidence du club et d'une exception au principe de localisation des données décrit à la section 2. Ce transfert est encadré par le DPA d'Anthropic et les clauses contractuelles types de l'UE.",
+          "Les données transmises à Anthropic sont utilisées uniquement à des fins d'extraction et ne sont jamais utilisées pour entraîner des modèles d'IA.",
+          "Les journaux de l'API sont conservés par Anthropic pendant 7 jours maximum avant suppression automatique.",
+          "Anthropic est un sous-traitant couvert par un accord de traitement des données (DPA) intégrant les clauses contractuelles types de l'UE.",
+          "Les utilisateurs doivent être informés avant d'importer tout PDF contenant des données personnelles."
+        ],
+        "link": {
+          "label": "Politique de confidentialité d'Anthropic",
+          "href": "https://www.anthropic.com/legal/privacy"
+        }
+      },
+      {
+        "title": "4. Responsable de traitement et sous-traitants",
+        "items": [
+          "Finset agit en tant que sous-traitant pour le compte du club, qui est le responsable de traitement.",
+          "AWS — hébergement de l'infrastructure et des bases de données.",
+          "Anthropic PBC — traitement par IA pour la fonctionnalité d'import de PDF.",
+          "Auth0 (Okta) — fournisseur d'identité et d'authentification (les comptes utilisateurs sont gérés dans Auth0, et non dans la base de données Finset)."
+        ]
+      },
+      {
+        "title": "5. Données personnelles traitées",
+        "items": [
+          "Données d'identité des joueurs (nom, date de naissance, nationalité).",
+          "Données contractuelles (salaire, primes, durée du contrat, clauses).",
+          "Données de compte utilisateur (administrateurs et personnel du club) — gérées par Auth0.",
+          "Journaux d'utilisation à des fins de sécurité et d'audit."
+        ]
+      },
+      {
+        "title": "6. Vos droits (RGPD)",
+        "items": [
+          "Droit d'accès, de rectification, d'effacement, de limitation, de portabilité et d'opposition.",
+          "Délai de réponse : dans un délai de 30 jours, conformément au RGPD."
+        ],
+        "contact": true
+      },
+      {
+        "title": "7. Conservation des données",
+        "items": [
+          "Données contractuelles actives : conservées pendant la durée de l'abonnement, augmentée de la période d'archivage légal.",
+          "Données supprimées : purgées dans un délai de 30 jours suivant une demande de suppression ou la résiliation du compte.",
+          "Journaux de l'API Anthropic : 7 jours maximum (gérés par Anthropic)."
+        ]
+      },
+      {
+        "title": "8. Sécurité",
+        "items": [
+          "Données chiffrées au repos (AES-256) et en transit (TLS 1.2+).",
+          "Contrôle d'accès basé sur les rôles au sein de la plateforme.",
+          "Audits de sécurité réguliers."
+        ]
+      },
+      {
+        "title": "9. Abonnement et facturation",
+        "items": [
+          "Modèle d'abonnement SaaS (mensuel ou annuel).",
+          "Tarification basée sur le nombre de clubs / d'utilisateurs.",
+          "Conditions de résiliation et de remboursement à définir avec les équipes juridique et commerciale."
+        ]
+      },
+      {
+        "title": "10. Limitation de responsabilité",
+        "items": [
+          "Finset ne saurait être tenue responsable des données saisies de manière erronée par les utilisateurs.",
+          "Niveau de disponibilité (SLA) à définir."
+        ]
+      },
+      {
+        "title": "11. Droit applicable",
+        "items": [
+          "À définir en fonction du pays d'immatriculation de la société (par défaut : droit français / RGPD)."
+        ]
+      },
+      {
+        "title": "12. Mises à jour de la présente politique",
+        "items": [
+          "Les utilisateurs sont informés par e-mail de toute modification substantielle.",
+          "La poursuite de l'utilisation du service vaut acceptation des modifications."
+        ]
+      }
+    ]
   }
 }
