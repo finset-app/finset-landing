@@ -50,8 +50,121 @@
     "links": {
       "features": "Features",
       "contact": "Contact",
-      "legalNotice": "Legal Notice"
+      "legalNotice": "Legal Notice",
+      "terms": "Terms & Privacy"
     },
     "copyright": "© 2026 Finset. All rights reserved."
+  },
+  "legal": {
+    "backToHome": "Back to home",
+    "title": "Terms of Service & Privacy Policy",
+    "lastUpdated": "Last updated: June 5, 2026",
+    "intro": "Finset is a SaaS platform dedicated to the financial management of professional football clubs. This page describes our Terms of Service and Privacy Policy, in compliance with the General Data Protection Regulation (GDPR).",
+    "contactCta": "To exercise your rights or for any question regarding your data, contact us.",
+    "placeholderNotice": "Some sections (billing, liability, governing law) contain placeholder content that must be completed by the legal and business teams before go-live. This page must be reviewed and validated by a legal advisor before publication.",
+    "sections": [
+      {
+        "title": "1. Service Description",
+        "items": [
+          "Finset is a SaaS platform dedicated to the financial management of professional football clubs.",
+          "Access is provided through a web application with role-based access control (RBAC)."
+        ]
+      },
+      {
+        "title": "2. Data Hosting & Infrastructure",
+        "items": [
+          "The application is hosted on Amazon Web Services (AWS).",
+          "Multi-tenant architecture with two levels of isolation: one dedicated RDS PostgreSQL instance per country (data localized by country), and within each instance, one isolated PostgreSQL schema per club (the primary cross-club data isolation mechanism).",
+          "Data is stored in the country of residence of the club (data sovereignty). For example, a French club's data is stored in the AWS region configured for France (e.g. eu-west-3 / Paris).",
+          "Currently, only the French (FR) datasource is configured; additional country instances are part of the target architecture and will be added as Finset expands.",
+          "AWS acts as a sub-processor subject to GDPR Standard Contractual Clauses (SCCs)."
+        ]
+      },
+      {
+        "title": "3. Use of Artificial Intelligence",
+        "items": [
+          "Finset uses the Anthropic Claude API for AI-powered extraction of player and contract data from uploaded PDF files.",
+          "Cross-border transfer notice: when a PDF is processed, its content (which may contain personal data) is transmitted to the Anthropic API (US-based infrastructure) for the duration of the extraction. This is a temporary transfer outside the club's country of residence and constitutes an exception to the data-localization principle described in section 2. It is covered by Anthropic's DPA and EU Standard Contractual Clauses.",
+          "Data sent to Anthropic is used solely for extraction purposes and is never used to train AI models.",
+          "API logs are retained by Anthropic for a maximum of 7 days before automatic deletion.",
+          "Anthropic is a sub-processor covered by a Data Processing Addendum (DPA) incorporating EU Standard Contractual Clauses.",
+          "Users must be informed before uploading any PDF containing personal data."
+        ],
+        "link": {
+          "label": "Anthropic Privacy Policy",
+          "href": "https://www.anthropic.com/legal/privacy"
+        }
+      },
+      {
+        "title": "4. Data Controller & Sub-processors",
+        "items": [
+          "Finset acts as a data processor on behalf of the club, which is the data controller.",
+          "AWS — infrastructure and database hosting.",
+          "Anthropic PBC — AI processing for the PDF import feature.",
+          "Auth0 (Okta) — identity & authentication provider (user accounts are managed in Auth0, not in the Finset database)."
+        ]
+      },
+      {
+        "title": "5. Personal Data Processed",
+        "items": [
+          "Player identity data (name, date of birth, nationality).",
+          "Contract data (salary, bonuses, contract duration, clauses).",
+          "User account data (club administrators and staff) — managed by Auth0.",
+          "Usage logs for security and audit purposes."
+        ]
+      },
+      {
+        "title": "6. Your Rights (GDPR)",
+        "items": [
+          "Right of access, rectification, erasure, restriction, portability, and objection.",
+          "Response time: within 30 days as required by GDPR."
+        ],
+        "contact": true
+      },
+      {
+        "title": "7. Data Retention",
+        "items": [
+          "Active contract data: retained for the duration of the subscription plus the legal archiving period.",
+          "Deleted data: purged within 30 days of a deletion request or account termination.",
+          "Anthropic API logs: 7 days maximum (managed by Anthropic)."
+        ]
+      },
+      {
+        "title": "8. Security",
+        "items": [
+          "Data encrypted at rest (AES-256) and in transit (TLS 1.2+).",
+          "Role-based access control within the platform.",
+          "Regular security audits."
+        ]
+      },
+      {
+        "title": "9. Subscription & Billing Terms",
+        "items": [
+          "SaaS subscription model (monthly or annual).",
+          "Pricing based on the number of clubs / users.",
+          "Cancellation and refund conditions to be defined with the legal and business teams."
+        ]
+      },
+      {
+        "title": "10. Limitation of Liability",
+        "items": [
+          "Finset is not liable for data entered incorrectly by users.",
+          "Availability SLA to be defined."
+        ]
+      },
+      {
+        "title": "11. Governing Law",
+        "items": [
+          "To be defined based on the company's country of incorporation (placeholder: French law / GDPR)."
+        ]
+      },
+      {
+        "title": "12. Updates to this Policy",
+        "items": [
+          "Users are notified by email of any material changes.",
+          "Continued use of the service constitutes acceptance of the changes."
+        ]
+      }
+    ]
   }
 }
