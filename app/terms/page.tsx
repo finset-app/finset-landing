@@ -74,10 +74,6 @@ export default function TermsPage() {
                             </section>
                         ))}
                     </div>
-
-                    <footer className="mt-12 rounded-lg bg-gray-50 p-6 text-sm text-gray-600">
-                        {t("legal.placeholderNotice")}
-                    </footer>
                 </div>
             </div>
         </main>

@@ -57,7 +57,7 @@ export default function LegalNoticePage() {
                             ))}
                             <button
                                 onClick={handleContactClick}
-                                className="font-semibold tracking-wide text-gray-900 hover:text-gray-500 transition-colors"
+                                className="mt-3 inline-block font-medium text-primary hover:underline"
                                 aria-label="Contact"
                             >
                                 Contactez-nous
