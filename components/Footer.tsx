@@ -63,6 +63,11 @@ const Footer = () => {
                         <h3 className="font-semibold mb-4">{t('footer.company')}</h3>
                         <ul className="space-y-3">
                             <li>
+                                <a href="/legal-notice" className="text-white/70 hover:text-white transition-colors">
+                                    {t('footer.links.legalNotice')}
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/terms" className="text-white/70 hover:text-white transition-colors">
                                     {t('footer.links.terms')}
                                 </a>

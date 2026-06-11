@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
+            url: "https://finset.fr/legal-notice",
+            lastModified: new Date(),
+            changeFrequency: "yearly",
+            priority: 0.3,
+        },
+        {
             url: "https://finset.fr/terms",
             lastModified: new Date(),
             changeFrequency: "yearly",
